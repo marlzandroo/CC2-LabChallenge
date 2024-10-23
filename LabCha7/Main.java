@@ -29,5 +29,6 @@ public class Main {
                 System.out.println("Password must contain at least 8 characters, including one uppercase letter and one number.");
             }
         }
+        scan.close();
     }
 }
