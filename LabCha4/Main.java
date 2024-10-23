@@ -35,6 +35,7 @@ public class Main{
         // Display the Discount Applied and the Final Price After Discount
         System.out.println("Discount Applied: " + (int)(discount * 100) + "%");
         System.out.println("Final Price After Discount: PHP " + (int)(finalPrice));
-        
+
+        scan.close();
     }
 }
