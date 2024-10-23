@@ -14,6 +14,8 @@ public class Main {
             String password = scan.nextLine();
 
             if(password.length() >= 8 && password.matches(".*d.*") && password.matches(".*[A-Z].*")){
+                System.out.println("Your password is valid");
+                break;
             }
             else{
                 System.out.println("Password must contain at least 8 characters, including one uppercase letter and one number.");
