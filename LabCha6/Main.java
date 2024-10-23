@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         // Input the total number of students in the class
         System.out.print("Enter the total number of students: ");
-        int totalStudents = scanner.nextInt();
+        int totalStudents = scan.nextInt();
 
         int presentStudent = 0;
         int absentStudent = 0;
@@ -20,7 +20,7 @@ public class Main {
         for (int i = 1; i <= totalStudents; i++) {
             while (true) { // Repeat until a valid input is received
                 System.out.print("Is student " + i + " present? (Y/N): ");
-                char response = scanner.next().charAt(0);
+                char response = scan.next().charAt(0);
 
                 // Check if the response is 'Y' for present, 'N' for absent
                 if (response == 'Y') {
@@ -41,6 +41,6 @@ public class Main {
         System.out.println("Total Present: " + presentStudent);
         System.out.println("Total Absent: " + absentStudent);
         
-        scanner.close();
+        scan.close();
     }
 }
