@@ -19,7 +19,7 @@ public class Main {
             // - At least 8 characters long
             // - Contains at least one digit (number)
             // - Contains at least one uppercase letter
-            if(password.length() >= 8 && password.matches(".*\\d.*") && password.matches(".*[A-Z].*")){
+            if(password.length() >= 8 && password.matches(".*\\d.*") && password.matches(".*[A-Z].*") && password.matches(".*[a-z].*")){
                 // If the password is valid, display success message and exit the loop
                 System.out.println("Your password is valid");
                 break;  // Exit the loop
@@ -32,3 +32,4 @@ public class Main {
         scan.close();
     }
 }
+
